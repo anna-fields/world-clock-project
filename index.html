@@ -7,6 +7,8 @@
     <title>World Clock</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
 </head>
 
 <body>
@@ -18,19 +20,19 @@
             <option value="barcelona">Barcelona 🇪🇸</option>
             <option value="dublin">Dublin 🇮🇪</option>
         </select>
-        <div class="cities">
+        <div class="cities" id="faro">
             <div>
                 <h2>Faro 🇵🇹</h2>
-                <div class="date">February 17th 2024</div>
+                <div class="date" id="faroDate"></div>
             </div>
-            <div class="time">10h37 <small>AM</small></div>
+            <div class="time" id="faroTime"></div>
         </div>
-        <div class="cities">
+        <div class="cities" id="Toronto">
             <div>
-                <h2>Ontario 🇨🇦</h2>
-                <div class="date">February 17th 2024</div>
+                <h2>Toronto 🇨🇦</h2>
+                <div class="date" id="torontoDate"></div>
             </div>
-            <div class="time">5h37 <small>AM</small></div>
+            <div class="time" id="torontoTime"></div>
         </div>
     </div>
 
@@ -42,6 +44,7 @@
             <a href="https://ubiquitous-pegasus-f04b0b.netlify.app/" target="_blank">hosted on Netlify</a>
         </p>
     </footer>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
