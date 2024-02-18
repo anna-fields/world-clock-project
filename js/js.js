@@ -16,6 +16,14 @@ function updateTime (){
     torontoDateElement.innerHTML=torontoTime.format("MMMM Do YYYY");
     torontoTimeElement.innerHTML=torontoTime.format("h:mm:ss [<small>]A[</small>]");
 
+    let buenosAiresElement = document.querySelector("#buenosAires");
+    let buenosAiresdateElement=document.querySelector("#buenosAiresDate");
+    let buenosAiresTimeElement=document.querySelector("#buenosAiresTime");
+    let buenosAiresTime = moment().tz("America/Argentina/Buenos_Aires");
+
+    buenosAiresdateElement.innerHTML=buenosAiresTime.format("MMMM Do YYYY");
+    buenosAiresTimeElement.innerHTML=buenosAiresTime.format("h:mm:ss [<small>]A[</small>]");
+
 }
 
 
